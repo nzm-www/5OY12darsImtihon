@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/moda.css" />
+  </head>
+  <body>
+    <a href="">
+      <div class="btn-group">
+        <button type="button" class="open-modal" data-open="modal1">
+          Launch first modal with a slide animation
+        </button>
+      </div>
+
+      <div class="modal" id="modal1" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            The header of the first modal
+            <button class="close-modal" aria-label="close modal" data-close>
+              ✕
+            </button>
+          </header>
+          <section class="modal-content">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <img src="../img/ptichka.png" alt="" />
+              <div class="loader">
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__ball"></div>
+              </div>
+            </div>
+            <h2>
+              THANK YOU <br />
+              FOR YOUR ORDER
+            </h2>
+            <p>You will receive an email confirmation shortly.</p>
+            <img src="../img/modalbtdiu.png" alt="" />
+            <img src="../img/modalong.png" alt="" />
+          </section>
+          <footer class="modal-footer">The footer of the first modal</footer>
+        </div>
+      </div>
+    </a>
+
+    <script src="../js/modal.js"></script>
+  </body>
+</html>
